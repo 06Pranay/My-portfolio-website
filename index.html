@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ad2cd440ac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                  <li><a href="#header">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <i class="fa-solid fa-xmark"onclick="closemenu()"></i>
+                  
+                </ul>
+                <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                 <p>Software Engineer</p>
+                <h1>Hi,I'am <span>Pranay Kumar</span></h1>
+            </div>
+        </div>
+     </div>
+     <!-- ---------about--------- -->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.pn">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a recent graduate with a B.Tech degree from Sharda University and hold a valid GATE All India Rank. I am seeking a beginner role in the IT industry to enhance and explore my technical knowledge, which I have gained through my education and coursework at Sharda
+University and Coding Ninja.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Java,C++,Sql</span><br>Programming Language
+                            </li>
+                            <li>
+                                <span>Basics of DSA </span><br>
+                            </li>
+                            <li>
+                                <span>HTML,CSS,JavaScript</span><br>Frontened Web Technologies
+                            </li>
+                            <li>
+                                <span>Node.js,Express.js</span><br>Backand Web Technologies
+                            </li>
+                            <li>
+                                <span>Visual code Studio,Eclipse IDE,Code Block,Chrome Dev Tool</span><br>Code Editor IDE
+                            </li>
+                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>Fresher</span><br>
+                            </li>
+                            
+                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>10th(C.B.S.E) </span><br>N.S D.A.V Public School Sitamarhi Bihar.
+                            </li>
+                            <li>
+                                <span>12th(C.B.S.E)</span><br>Sri Chaitanya Vidhya Niketan visakhapatnam A.P.
+                            </li>
+                            <li>
+                                <span>B.Tech(Electronics & Communication Engineering)<br>Gate AIR:-13823</span><br>Sharda University Noida U.P.
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- ---------------services-------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Frontened Web Designing</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Software</h2>
+                    <p>Doing Software Stuff.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- -------------------portfolio------------------ -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                     <div class="layer">
+                        <h3> My Portfolio</h3>
+                        <p> I have created my personal  portfolio website to share skills and learnings.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                     </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Game Quiz App </h3>
+                        <p>This app help you to play a quiz.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                     </div>
+                    
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Alarm Clock</h3>
+                        <p> This is a Simple alarm clock App.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                     </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+        
+     </div>
+     <!-- ---------------------Contact------------------ -->
+     <div id="contact">
+       <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i>06pranay@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i>9110103731</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/06pranay/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                 <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                 </form>
+            </div>
+        </div>
+       </div>
+       <div class="copyright">
+        <p>copyright @ Pranay.</p>
+       </div>
+     </div>
+     
+     <script src="index.js"></script>
+     <script>
+        //here we have added the event listener for the sidebar menu
+        var sidemeu=document.getElementById("sidemenu");
+        function openmenu()
+        {
+            sidemeu.style.right="0";
+        }
+        function closemenu()
+        {
+            sidemeu.style.right="-200px";
+        }
+     </script>
+     <!-- This Code is for to add Google sheet to our website so that we can get the data. -->
+     <script>
+       
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx9hDXQ1liDPm9dEekkCA2FADGQLBvupMv2SuB5tBmJIisUh16ICB9p7Sieq2Rfy5-g/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+
+     </script>
+</body>
+</html>
